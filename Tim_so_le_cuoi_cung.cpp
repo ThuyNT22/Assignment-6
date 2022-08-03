@@ -9,12 +9,16 @@ int main(){
 	for(int i=0;i<n;i++){
 		scanf("%d",&ar[i]);
 	}
+	int z=0;
 	for(int i=n-1;i>=0;i--){
 		if(ar[i]%2==1){
 			printf("So le cuoi cung cua mang la %d",ar[i]);
 			break;
 		}else{
-			printf("Mang khong co so le");
+			z++;
 		}
+	}
+	if(z!=0){
+		printf("Mang khong co so le");
 	}
 }
